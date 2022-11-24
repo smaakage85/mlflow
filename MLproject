@@ -1,5 +1,4 @@
-#conda_env: env_conda.yml
-python_env: env_virtualenv.yml
+conda_env: conda.yaml
 
 entry_points:
   training:

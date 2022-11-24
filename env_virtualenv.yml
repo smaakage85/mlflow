@@ -1,6 +1,0 @@
-python: "3.9"
-dependencies:
-  - mlflow
-  - boto3
-  - numpy
-  - scikit-learn

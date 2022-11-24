@@ -32,20 +32,22 @@ MLflow offers a convenient built-in command-line interface for training and logg
 mlflow run . -e training --env-manager local
 ```
 
-`mlflow run` requires an `MLproject` file specifying training specific options like training entrypoint(s) and environment requirements.
+`mlflow run` requires an `MLproject` file specifying training specific options - in particular training entrypoint(s). 
 
 ## :computer: Environments
 
-### `conda` environment
-
-```bash
-mlflow run . -e training --env-manager conda
-```
+The above experiments are all run in the active local environment, i.e. maximum flexibility, but zero reproducibility.
 
 ### `virtualenv` environment (w/`pyenv`)
 
 ```bash
 mlflow run . -e training --env-manager virtualenv
+```
+
+### `conda` environment
+
+```bash
+mlflow run . -e training --env-manager conda
 ```
 
 ### Docker container
