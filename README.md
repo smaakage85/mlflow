@@ -1,8 +1,6 @@
 # Training and logging w/[MLflow](https://mlflow.org/)
 
-- virtualenv
-- miniconda 
-- docker
+This project goes through how models can be trained and logged with MLflow.
 
 ## :candy: Model flavors
 
@@ -10,7 +8,7 @@ MLflow provides support several standard [Model flavors](https://mlflow.org/docs
 
 ### Built-in flavors
 
-Training a model with one of the the built-in model flavors is straightforward:
+Training and logging a model with one of the the built-in model flavors is straightforward:
 
 ```bash
 python train.py
@@ -18,7 +16,7 @@ python train.py
 
 ### Custom flavor
 
-Training a model with a custom model flavor requires more footwork:
+Training and logging a model with a custom model flavor requires more footwork:
 
 ```bash
 python train_custom.py --n_obs 15000
