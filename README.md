@@ -2,7 +2,7 @@
 
 ## :candy: Model flavors
 
-### Built-in
+### Built-in flavor
 
 Training a model with one of the MLflow [built-in model flavors](https://mlflow.org/docs/latest/models.html#built-in-model-flavors) is easy:
 
@@ -10,7 +10,7 @@ Training a model with one of the MLflow [built-in model flavors](https://mlflow.
 python train.py
 ```
 
-### Custom
+### Custom flavor
 
 Training a model with a custom model flavor requires more footwork:
 
