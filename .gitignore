@@ -1,0 +1,6 @@
+.vscode/
+venv/
+outputs/
+mlruns/
+**/__pycache__/
+.aws

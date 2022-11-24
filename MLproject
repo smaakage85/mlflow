@@ -1,0 +1,6 @@
+#conda_env: env_conda.yml
+python_env: env_virtualenv.yml
+
+entry_points:
+  training:
+    command: "python train.py"
