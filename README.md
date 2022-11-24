@@ -1,6 +1,6 @@
 # Training and logging with [MLflow](https://mlflow.org/) <img src='mlflow.jpeg' align="right" height="140" />
 
-This project explores and exemplifies the different ways in MLflow to train and log (Python) machine learning models. 
+This project explores and exemplifies the different ways in MLflow of training and logging (Python) machine learning models. 
 
 To run all of the included examples, install: [`Python`](https://www.python.org/downloads/), [`miniconda`](https://docs.conda.io/en/latest/miniconda.html), [`virtualenv`](https://pypi.org/project/virtualenv/), [`docker`](https://docs.docker.com/get-docker/), [`pyenv`](https://github.com/pyenv/pyenv) and [`mlflow`](https://pypi.org/project/mlflow/)>=2.0.
 
