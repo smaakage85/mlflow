@@ -19,3 +19,4 @@
 - fed funktionalitet
 - 'conda' indtil fornylig default environment manager. Nu fraråder de eksplicit 'conda' og har indført 'pip' + 'virtualenv' som default.
 - godkendt support af custom modeller
+- har ikke beskæftiget mig med "model registry" og model deployment
