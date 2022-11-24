@@ -1,4 +1,4 @@
-# Training and logging models with [MLflow](https://mlflow.org/) <img src='mlflow.jpeg' align="right" height="140" />
+# Training and logging with [MLflow](https://mlflow.org/) <img src='mlflow.jpeg' align="right" height="140" />
 
 This project explores and exemplifies the different ways of training and logging (Python) machine learning models, that MLflow has to offer. 
 
