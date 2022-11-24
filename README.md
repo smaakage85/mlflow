@@ -56,4 +56,6 @@ mlflow run . -e training --env-manager conda
 
 ### Docker container
 
-See [this project](https://github.com/smaakage85/mlflowdocker).
+MLflow also has support for training a model in a Docker environment (as opposed to Conda). This allows for capturing non-Python dependencies, e.g. Java libraries.
+
+See [this project](https://github.com/smaakage85/mlflowdocker) for an example.
