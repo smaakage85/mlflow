@@ -4,7 +4,7 @@ import mlflow
 
 if __name__ == "__main__":    
     ## connect to MLflow server through tracking URI
-    # mlflow.set_tracking_uri("https://ap-api-test.ccta.dk/mlflow/test201")    
+    # mlflow.set_tracking_uri([MLFLOW_TRACKING_URI])    
     with mlflow.start_run() as run:
         X = np.array([-2, -1, 0, 1, 2, 1]).reshape(-1, 1)
         y = np.array([0, 0, 1, 1, 1, 0])
