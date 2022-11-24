@@ -4,7 +4,7 @@ This project goes through how models can be trained and logged with MLflow.
 
 ## :candy: Model flavors
 
-MLflow provides support several standard [Model flavors](https://mlflow.org/docs/latest/models.html#built-in-model-flavors) meaning either model frameworks (e.g. `pytorch`, `tensorflow` or `scikit-learn`) or specific algorithms (e.g. `CatBoost`, `xgboost` or `LightGBM`) out-of-the-box. 
+MLflow provides support several standard [model flavors](https://mlflow.org/docs/latest/models.html#built-in-model-flavors) meaning either model frameworks (e.g. `pytorch`, `tensorflow` or `scikit-learn`) or specific algorithms (e.g. `CatBoost`, `xgboost` or `LightGBM`) out-of-the-box. 
 
 ### Built-in flavors
 
@@ -26,11 +26,12 @@ In this case the user must define a model wrapper inheriting from the `mlflow.py
 
 ## :shell: `mlflow run` CLI
 
-MLflow offers a convenient built-in command-line interface for training and logging models: `mlflow run`. 
+MLflow offers a convenient built-in command-line interface for training and logging models: `mlflow run`:
 
 ```bash
 mlflow run . -e training --env-manager local
 ```
+
 `mlflow run` requires an `MLproject` file specifying training specific options like training entrypoint(s) and environment requirements.
 
 ## :computer: Environments
