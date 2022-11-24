@@ -30,11 +30,10 @@ In this case the user must define a model wrapper inheriting from the `mlflow.py
 
 MLflow offers a convenient built-in command-line interface for training and logging models: `mlflow run`. 
 
-`mlflow run` requires an `MLproject` file specifying certain training specific options like training entrypoint(s) and environment requirements.
-
 ```bash
 mlflow run . -e training --env-manager local
 ```
+`mlflow run` requires an `MLproject` file specifying training specific options like training entrypoint(s) and environment requirements.
 
 ## :computer: Environments
 
