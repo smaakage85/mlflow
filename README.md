@@ -2,7 +2,7 @@
 
 This project explores and exemplifies the different ways of training and logging (Python) machine learning models, that MLflow has to offer. 
 
-To run all of the included examples, install: [`Python`](https://www.python.org/downloads/), [`miniconda`](https://docs.conda.io/en/latest/miniconda.html), [`virtualenv`](https://pypi.org/project/virtualenv/), [`docker`](https://docs.docker.com/get-docker/), [`pyenv`](https://github.com/pyenv/pyenv).
+To run all of the included examples, install: [`Python`](https://www.python.org/downloads/), [`miniconda`](https://docs.conda.io/en/latest/miniconda.html), [`virtualenv`](https://pypi.org/project/virtualenv/), [`docker`](https://docs.docker.com/get-docker/), [`pyenv`](https://github.com/pyenv/pyenv) and [`mlflow`>=2.0](https://pypi.org/project/mlflow/).
 
 ## :candy: Model flavors
 
