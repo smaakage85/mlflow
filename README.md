@@ -2,11 +2,16 @@
 
 ## :candy: Model flavors
 
+### Built-in
+
 Training a model with one of the MLflow [built-in model flavors](https://mlflow.org/docs/latest/models.html#built-in-model-flavors) is easy:
 
 ```bash
 python train.py
 ```
+
+### Custom
+
 Training a model with a custom model flavor requires more footwork:
 
 ```bash
