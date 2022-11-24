@@ -24,7 +24,7 @@ Note, the user must define a model wrapper inheriting from the `mlflow.pyfunc.Py
 
 MLflow offers a convenient built-in command-line interface for training and logging models: `mlflow run`. 
 
-`mlflow run` requires an `MLproject` file that specifies certain training options like training entrypoint(s).
+`mlflow run` requires an `MLproject` file that specifies certain experiment specific options like training entrypoint(s).
 
 ```bash
 mlflow run . -e training --env-manager local
