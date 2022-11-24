@@ -18,11 +18,13 @@ Training a model with a custom model flavor requires more footwork:
 python train_custom.py --n_obs 15000
 ```
 
-The user must define a model wrapper inheriting from the `mlflow.pyfunc.PythonModel` class (:arrow_right: ``./model_wrapper.py``).
+Note, the user must define a model wrapper inheriting from the `mlflow.pyfunc.PythonModel`.
 
 ## :shell: `mlflow run` CLI
 
 MLflow offers a convenient built-in command-line interface for training and logging models: `mlflow run`. 
+
+`mlflow run` requires an `MLproject` file that specifies certain training options like training entrypoint(s).
 
 ```bash
 mlflow run . -e training --env-manager local
