@@ -1,6 +1,6 @@
-# Training and logging w/[MLflow](https://mlflow.org/)
+# Training and logging with [MLflow](https://mlflow.org/)
 
-This project goes through how models can be trained and logged with MLflow.
+This project goes through all of the alternatives MLflow has to offer with respect to training and logging machine learning models. 
 
 ## :candy: Model flavors
 
@@ -22,9 +22,9 @@ Training and logging a model with a custom model flavor requires more footwork:
 python train_custom.py --n_obs 15000
 ```
 
-In this case the user must define a model wrapper inheriting from the `mlflow.pyfunc.PythonModel`.
+In this case the user must define a model wrapper for the custom model inheriting from the `mlflow.pyfunc.PythonModel` equipped with specific methods like `load_context()` and `predict()`.
 
-## :shell: `mlflow run` CLI
+## :shell: Built-in Command-Line Interface
 
 MLflow offers a convenient built-in command-line interface for training and logging models: `mlflow run`:
 
@@ -32,17 +32,19 @@ MLflow offers a convenient built-in command-line interface for training and logg
 mlflow run . -e training --env-manager local
 ```
 
-`mlflow run` requires an `MLproject` file specifying training specific options - in particular training entrypoint(s). 
+`mlflow run` requires an `MLproject` file specifying training specific options. As a bare minimum the `MLproject` must specify a training entrypoint. 
 
-## :computer: Environments
+## :computer: Computational environments
 
-The above experiments are all run in the active local environment, i.e. maximum flexibility, but zero reproducibility.
+The above experiments are all run in the active local environment. This means maximum flexibility on the developer side, which is great, but it also implies minimum reproducibility of the results.
 
-### `virtualenv` environment (w/`pyenv`)
+### `virtualenv` environment
 
 ```bash
 mlflow run . -e training --env-manager virtualenv
 ```
+
+Uses `pyenv`.
 
 ### `conda` environment
 
