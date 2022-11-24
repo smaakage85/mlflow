@@ -18,3 +18,4 @@
 - bidrag til at strømline model/kode-udvikling
 - fed funktionalitet
 - 'conda' indtil fornylig default environment manager. Nu fraråder de eksplicit 'conda' og har indført 'pip' + 'virtualenv' som default.
+- godkendt support af custom modeller
