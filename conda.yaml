@@ -1,0 +1,9 @@
+name: smaakage
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - mlflow
+  - boto3
+  - numpy
+  - scikit-learn
