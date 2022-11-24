@@ -36,7 +36,7 @@ if __name__ == "__main__":
         mlflow.log_params({"n_obs": args.n_obs})
         mlflow.log_metrics({"rmse": rmse})
         mlflow.pyfunc.log_model(
-            artifact_path="outputs",
+            artifact_path=artifact_dir,
             python_model=CustomModel(),
             artifacts=artifacts,
         )
