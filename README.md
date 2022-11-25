@@ -55,7 +55,7 @@ Analog to `virtualenv`. The `conda` environment is created from `conda.yaml`.
 ```bash
 mlflow run . -e training --env-manager conda
 ```
-*NOTE*: for some reason `conda_env: conda.yaml` must be set in `MLproject` to actually run this example (has to be a bug?).
+*NOTE*: for some reason `conda_env: conda.yaml` must be set in `MLproject` to actually run this example (has to be a bug in MLflow?).
 
 ### Docker container
 
