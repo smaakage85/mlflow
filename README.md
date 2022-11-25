@@ -18,13 +18,11 @@ python train.py
 
 ### Custom flavor
 
-Training and logging a model with a custom model flavor requires more footwork:
+Training and logging a model with a custom model flavor requires more footwork. In this case the model developer must implement a model wrapper for the custom model inheriting from the `mlflow.pyfunc.PythonModel` and equip it with specific methods like `load_context()` and `predict()`. The model is then trained by invoking:
 
 ```bash
 python train_custom.py --n_obs 15000
 ```
-
-In this case the user must define a model wrapper for the custom model inheriting from the `mlflow.pyfunc.PythonModel` equipped with specific methods like `load_context()` and `predict()`.
 
 ## :shell: Built-in Command-Line Interface
 
@@ -34,13 +32,17 @@ MLflow offers a convenient built-in command-line interface for training and logg
 mlflow run . -e training --env-manager local
 ```
 
-`mlflow run` requires an `MLproject` file specifying training specific options. As a bare minimum the `MLproject` must specify a training entrypoint. 
+`mlflow run` requires an `MLproject` file specifying project specific options. In my taste, the `MLproject` should be as minimalistic as possible but at least specify training entrypoints.
 
 ## :computer: Computational environments
 
-The above experiments are all run in the active local environment. This means maximum flexibility on the developer side, which is great, but it also implies minimum reproducibility of the results.
+The above experiments are all run in the activen local environment. This means maximum flexibility on the developer side, which is great, but it also implies minimum reproducibility of the results. 
+
+For increased environment reproducibility MLflow offers support for environment managers: `virtualenv`, `conda` and `Docker`.  
 
 ### `virtualenv` environment
+
+The default environment manager in 'mlflow' is 'virtualenv'.
 
 ```bash
 mlflow run . -e training --env-manager virtualenv
