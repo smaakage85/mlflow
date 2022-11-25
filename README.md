@@ -32,7 +32,7 @@ MLflow offers a convenient built-in command-line interface for training and logg
 mlflow run . -e training --env-manager local
 ```
 
-`mlflow run` requires an `MLproject` file specifying project specific options. In my taste, the `MLproject` should be as minimalistic as possible but at least specify training entrypoints.
+`mlflow run` requires an `MLproject` file specifying project specific options. In my taste, the `MLproject` should be kept as slim as possible but at least specify training entrypoints.
 
 ## :computer: Computational environments
 
@@ -42,22 +42,23 @@ For increased environment reproducibility MLflow offers support for environment 
 
 ### `virtualenv` environment
 
-The default environment manager in 'mlflow' is 'virtualenv'.
+The default environment manager in 'mlflow' is 'virtualenv'. When calling `mlflow run` with `virtualenv` as environment manager, a virtual environment is created from `python_env.yaml`, and the model is trained in that environment.
 
 ```bash
 mlflow run . -e training --env-manager virtualenv
 ```
 
-Uses `pyenv`.
-
 ### `conda` environment
+
+Analog to `virtualenv`. The `conda` environment is created from `conda.yaml`.
 
 ```bash
 mlflow run . -e training --env-manager conda
 ```
+*NOTE*: for some reason `conda_env: conda.yaml` must be set in `MLproject` to actually run this example (has to be a bug?).
 
 ### Docker container
 
-MLflow also has support for training a model in a Docker environment. As opposed to `conda` this allows for capturing non-Python dependencies, e.g. Java libraries.
+MLflow also has support for training a model in a Docker environment. As opposed to `conda` and `virtualenv` this allows for capturing non-Python dependencies, e.g. Java libraries.
 
 See [this project](https://github.com/smaakage85/mlflowdocker) for an example.
