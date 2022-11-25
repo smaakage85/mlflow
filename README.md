@@ -42,7 +42,7 @@ For increased environment reproducibility MLflow offers support for environment 
 
 ### `virtualenv` environment
 
-The default environment manager in 'mlflow' is 'virtualenv'. When calling `mlflow run` with `virtualenv` as environment manager, a virtual environment is created from `python_env.yaml`, and the model is trained in that environment.
+The default environment manager in `mlflow` is `virtualenv`. When calling `mlflow run` with `virtualenv` as environment manager, a virtual environment is created from `python_env.yaml`, and the model is trained in that environment.
 
 ```bash
 mlflow run . -e training --env-manager virtualenv
