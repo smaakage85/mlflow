@@ -1,4 +1,4 @@
-# Training and logging with [MLflow](https://mlflow.org/) <img src='mlflow.jpeg' align="right" height="140" />
+# Training and logging with [MLflow](https://mlflow.org/) <img src='mlflow.jpeg' align="right" height="140"/>
 
 This project explores and exemplifies the different ways in MLflow of training and logging (Python) machine learning models. 
 
@@ -10,7 +10,7 @@ MLflow provides support several standard [model flavors](https://mlflow.org/docs
 
 ### Built-in flavors
 
-Training and logging a model with one of the the built-in model flavors is straightforward:
+Training and logging a model with one of the built-in model flavors is straightforward:
 
 ```bash
 python train.py
@@ -18,7 +18,7 @@ python train.py
 
 ### Custom flavor
 
-Training and logging a model with a custom model flavor requires more footwork. In this case the model developer must implement a model wrapper for the custom model inheriting from the `mlflow.pyfunc.PythonModel` and equip it with specific methods like `load_context()` and `predict()`. The model is then trained by invoking:
+Training and logging a model with a custom model flavor requires more footwork. In this case the model developer must implement a model wrapper for the custom model inheriting from the `mlflow.pyfunc.PythonModel` and equip it with specific methods like `load_context()` and `predict()`. See `custom_model.py` for an example of this. The custom model is then trained by invoking:
 
 ```bash
 python train_custom.py --n_obs 15000
@@ -32,11 +32,11 @@ MLflow offers a convenient built-in command-line interface for training and logg
 mlflow run . -e training --env-manager local
 ```
 
-`mlflow run` requires an `MLproject` file specifying project specific options. In my taste, the `MLproject` should be kept as slim as possible but at least specify training entrypoints.
+`mlflow run` requires an `MLproject` file specifying project specific options. In my view, the `MLproject` should be kept as slim as possible but at least specify training entrypoints.
 
 ## :computer: Computational environments
 
-The above experiments are all run in the activen local environment. This means maximum flexibility on the developer side, which is great, but it also implies minimum reproducibility of the results. 
+The above experiments are all run in the active local environment. This means maximum flexibility on the developer side, which is great, but it also implies minimum reproducibility of the results. 
 
 For increased environment reproducibility MLflow offers support for environment managers: `virtualenv`, `conda` and `Docker`.  
 
@@ -50,12 +50,12 @@ mlflow run . -e training --env-manager virtualenv
 
 ### `conda` environment
 
-Analog to `virtualenv`. The `conda` environment is created from `conda.yaml`.
+Analogous to `virtualenv`. The `conda` environment is created from `conda.yaml`.
 
 ```bash
 mlflow run . -e training --env-manager conda
 ```
-*NOTE*: for some reason `conda_env: conda.yaml` must be set in `MLproject` to actually run this example (has to be a bug in MLflow?).
+*NOTE*: for some reason `conda_env: conda.yaml` must be set in `MLproject` to actually run this example (has to be a bug in MLflow).
 
 ### Docker container
 
