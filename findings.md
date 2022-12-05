@@ -22,7 +22,7 @@
 - Seems `mlflow` developers do not put much effort into R integration
   - Core functionality like `log_model()` is not documented
   - New flagship functionality like `MLflow Recipes` is not even implemented in R
-    - `mlflow` clearly a 'python-first' strategy
+    - `mlflow` team clearly has a 'python-first' strategy
 
 **Identified bugs**
 - R: `FIPS`
