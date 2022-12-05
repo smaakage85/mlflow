@@ -28,7 +28,7 @@
 - R: `FIPS`
 - `mlflow run` crashes, when env_manager is set to 'conda' and python_env.yaml exists
 - `mlflow.set_tracking_uri` does not work together with `mlflow run`
-- Docker example does not run
+- Docker example does not run (and works quite differently from the flow described in the documentation)
 
 **Misc**
 - env_manager="virtualenv" uses python package `virtualenv` together with `pyenv`
