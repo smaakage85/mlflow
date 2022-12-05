@@ -1,7 +1,10 @@
 # Findings
 
-- Poor documentation for Docker Container integration
-- Only found one official example (that did not run)
+## Docker integration
+- Very poor documentation
+- Only found one official example
+  - It didn't run!
+  - It seems 
 - Identified critical bug in mlflow (concerning!) Docker container integration
 - Identified bug in mlflow run: mlflow.set_tracking_uri does not work (tested w/conda)
 - Identified bug in mlflow run: virtualenv conflict with python_env.yaml
