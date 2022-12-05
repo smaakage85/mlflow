@@ -3,13 +3,13 @@
 **Overall functionality**
 - Cool functionality for logging models and experiment meta data
 - Flexible functionality for implementing custom model flavors
-- Will contribute to standardization of the model code and model development workflow
+- Will contribute to standardization of the model code and model development workflow (to some degree)
 - We found 4 bugs ìn `mlflow` in just one week; is the code properly tested?
   - Raises concerns for the code quality/stability of `mlflow`
 - Documentation is pretty bad, in some cases even for core functionality:
   - Docker integration, R integration, custom model flavors (e.g. `mlflow.pyfunc.PythonModel)
 - `mlflow` only has half-hearted support for R (and maybe even no support in the future?)
-- `mlflow` discourage the use of `conda`. This suggests, that `conda` might not be supported in the future.
+- `mlflow` discourages the use of `conda`. This suggests, that `conda` might not be supported in the future.
 
 **Docker integration**
 - Poor documentation
