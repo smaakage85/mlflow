@@ -5,10 +5,10 @@
 - Flexible functionality for implementing custom model flavors
 - Will contribute to standardization of the model code and model development workflow
 - We found 4 bugs ìn `mlflow` in just one week; is the code properly tested?
-  - *Raises concerns for the code quality/stability of `mlflow`*
+  - Raises concerns for the code quality/stability of `mlflow`
 - Documentation is pretty bad, in some cases even for core functionality:
   - Docker integration, R integration, custom model flavors (e.g. `mlflow.pyfunc.PythonModel)
-- `mlflow` only has half-hearted support for R (and maybe no support in the future?)
+- `mlflow` only has half-hearted support for R (and maybe even no support in the future?)
 
 **Docker integration**
 - Poor documentation
@@ -29,15 +29,8 @@
 - `mlflow.set_tracking_uri` does not work together with `mlflow run`
 - Docker example does not run
 
-
-- Unlike when env_manager is set to 'virtualenv' or 'conda'
-- Do not like python built-ins: conda > pip and virtualenv > venv
-- draws upon 'virtualenv' and 'pyenv'
-- svag dokumentation R log_model, mlflow.pyfunc.PythonModel
-- support R + docker
-- mlflow kommer ikke til at begrænse os ift. træning og logging
-- bidrag til at strømline model/kode-udvikling
-- fed funktionalitet
-- 'conda' indtil fornylig default environment manager. Nu fraråder de eksplicit 'conda' og har indført 'pip' + 'virtualenv' som default.
-- godkendt support af custom modeller
-- har ikke beskæftiget mig med "model registry" og model deployment
+**Misc**
+- env_manager="virtualenv" uses python package `virtualenv` together with `pyenv`
+  - 'venv' is not supported
+- 'mlflow' team seems to not have a preference built-ins: `conda` > `pip` and `virtualenv` > `venv`
+- 'conda' was the default mlflow environment manager until R.0 release. Now `mlflow` advices the user NOT to use `conda`. Instead they now recommend `virtualenv` + `pip` (=new default).
