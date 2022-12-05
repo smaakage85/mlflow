@@ -9,6 +9,7 @@
 - Documentation is pretty bad, in some cases even for core functionality:
   - Docker integration, R integration, custom model flavors (e.g. `mlflow.pyfunc.PythonModel)
 - `mlflow` only has half-hearted support for R (and maybe even no support in the future?)
+- `mlflow` discourage the use of `conda`. This suggests, that `conda` might not be supported in the future.
 
 **Docker integration**
 - Poor documentation
@@ -21,7 +22,7 @@
 - Seems `mlflow` developers do not put much effort into R integration
   - Core functionality like `log_model()` is not documented
   - New flagship functionality like `MLflow Recipes` is not even implemented in R
-    - `mlflow` must have a 'python-first' strategy
+    - `mlflow` clearly a 'python-first' strategy
 
 **Identified bugs**
 - R: `FIPS`
