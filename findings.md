@@ -34,4 +34,4 @@
 - env_manager="virtualenv" uses python package `virtualenv` together with `pyenv`
   - 'venv' is not supported
 - 'mlflow' team seems to not have a preference built-ins: `conda` > `pip` and `virtualenv` > `venv`
-- 'conda' was the default mlflow environment manager until R.0 release. Now `mlflow` advices the user NOT to use `conda`. Instead they now recommend `virtualenv` + `pip` (=new default).
+- 'conda' was the default mlflow environment manager until 4.0 release. Now `mlflow` advices the user NOT to use `conda`. Instead they now recommend `virtualenv` + `pip` (=new default).
