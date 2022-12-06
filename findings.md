@@ -14,7 +14,7 @@
 **Docker integration**
 - Poor documentation
 - Only one official example available
-  - The run!
+  - The example does not run!
   - It seems like, the docker integration works differently from the flow described in the example
     - Only runs if the docker image is build ex ante (unlike `virtualenv` and `conda` flows)
 
